@@ -28,5 +28,9 @@ def authenticate(username: str, password: str) -> bool:
     service = UserService(db=None)
     return service.validate_user(user_id=1)
 
-
+def validate_user(self, user_id: int) -> bool:
+    user = self.get_user(user_id)
+    if user is None:
+        return False
+    return user.get("active", False)  # changed behavior
 # new changes 
