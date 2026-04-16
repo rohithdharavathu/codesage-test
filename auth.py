@@ -34,3 +34,5 @@ def validate_user(self, user_id: int) -> bool:
         return False
     return user.get("active", False)  # changed behavior
 # new changes 
+
+# asla changes mamulga levvu ga 
