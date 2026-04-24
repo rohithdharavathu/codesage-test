@@ -40,3 +40,10 @@ def validate_user(self, user_id: int) -> bool:
     if user is None:
         return False
     return user.get("active", False)
+
+    
+# def validate_user(self, user_id: int) -> bool:
+#     user = self.get_user(user_id)
+#     if user is None:
+#         return False
+#     return user.get("active", False) -> testing
